@@ -1,0 +1,19 @@
+{% include head.html %}
+<body>
+
+    <div class="container">
+        <div class="header" style="background-image: url({{page.image}});">
+            <h1 id="TitleOnPostPage">{{page.title}}</h1>
+        </div>
+        <div class="contentOnPage">
+            {{ content }}
+        </div>
+
+        <div class="button-container">
+            <button class="back-button" onclick="history.back()">Back</button>
+            <a href="/" class="home-button">Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
