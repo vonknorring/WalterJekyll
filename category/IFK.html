@@ -8,9 +8,9 @@ title: IFK
     {% for post in site.posts %}
         {% if post.categories contains "IFK" %}
             <div class="blog-post">
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
                 {% if post.image %}
-                    <img src="{{ post.image }}" alt="{{ post.title }}" class="post-image">
+                    <img src="{{site.baseurl}}{{ post.image }}" alt="{{ post.title }}" class="post-image">
                 {% endif %}
                 <p class="post-meta">
                     <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
